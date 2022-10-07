@@ -12,22 +12,17 @@
     <h1>OpenWeather</h1>
     <div class="container">
         <div class="search">
-            <form action="">
+            <form action="" id="search_city">
                 <!-- <label for="city">ENTER A CITY</label> -->
                 <input type="text" id="city" name="city" placeholder="ENTER A CITY" required>
                 <div class="btn-div">
                     <button class="btn" type="submit">SUBMIT</button>
                 </div>
             </form>
+            <div class="error"></div>
         </div>
         <div class="body">
             <div class="result" id="const">
-                <div class="icon">
-                </div>
-                <div class="temperature">
-                </div>
-                <div class="location">
-                </div>
             </div>
 
         </div>

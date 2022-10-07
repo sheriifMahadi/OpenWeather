@@ -73,12 +73,23 @@ h1{
 }
 
 .icon, .temperature, .location{
-    background-color: white;
-    color: rgb(95, 121, 79);;
+    color: white;
+    background-color: rgb(92, 117, 76);
     margin: 10px;
     padding: 10px;
+    font-weight: bold;
 }
-
+.super {
+    vertical-align: super;
+    font-size: 10px;
+}
+.fade {
+    opacity: 0.7;
+}
+.error {
+    font-size: 30px;
+    padding: 10px 0;
+}
 @media (min-width: 600px){
     .body{
         grid-template-columns: repeat(2, 1fr);
