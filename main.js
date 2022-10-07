@@ -2,7 +2,7 @@ let userLoc = document.getElementById('const')
 const kelvin = 273;
 async function getUserIpLoc(){
     try{
-        const ip_addr_loc = await fetch('https://ip-api.com/json')
+        const ip_addr_loc = await fetch('http://ip-api.com/json')
         const ip_data = await ip_addr_loc.json()
         return ip_data
     }
