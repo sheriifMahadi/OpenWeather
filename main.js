@@ -66,6 +66,10 @@ function searchCity() {
                 alert(data.message)
             }
             else {
+                let remove_div = document.querySelectorAll(`[data-id="${data.name}"]`)
+                for (i = 0; i < remove_div.length; i++) {
+                    remove_div[i].remove()
+                }
                 body.innerHTML += `
                 <div class="result custom" data-id="${data.name}">
                     <div class="icon">
